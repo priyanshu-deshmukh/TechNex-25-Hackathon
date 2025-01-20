@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO SMART</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="icon" href="assets/images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="video-container">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/images/logo.jpg" alt="Logo">
+                <span class="logo-text">AGRO SMART</span>
+            </div>
+            <div class="navbar-links" id="navbarLinks">
+                <a href="index.html#home">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="navbar-toggler" id="navbarToggler">
+                <span class="toggler-icon">&#9776;</span>
+            </div>
+        </nav>
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="assets/videos/back_vid.mp4" type="video/mp4">
+        </video>
+        <div class="heading-and-button">
+            <h1 class="main-heading">TechVision - Explore the Future</h1>
+            <a href="#about" class="link-under-main-heading">Explore</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <!-- Add your main content here -->
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggler = document.getElementById('navbarToggler');
+            const navbarLinks = document.getElementById('navbarLinks');
+
+            navbarToggler.addEventListener('click', function () {
+                navbarLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
